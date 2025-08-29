@@ -1,35 +1,35 @@
-﻿// See https://aka.ms/new-console-template for more information
-// ADVANCED MULTİ OPERAİTON CALCULATOR
+
+// ADVANCED MULTİ OPERATİON CALCULATOR
 
 Console.WriteLine("Enter the first number:");
-double number1 = Convert.ToDouble(Console.ReadLine());
+double number1=Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Enter the second number:");
-double number2= Convert.ToDouble(Console.ReadLine());
+double number2=Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("choose the operation: +,-,*,/");
-string operation = Console.ReadLine();
+string operation=Console.ReadLine();
 double result;
 
-if (operation == "+")
+if (operation=="+")
 {
     result = number1 + number2;
-    Console.WriteLine($"Answer is:{result}");
+    Console.WriteLine($"Answer is: {result}");
 }
-else if (operation == "-")
+else if (operation=="-")
 {
     result = number1 - number2;
-    Console.WriteLine($"Answer is:{result}");
+    Console.WriteLine($"Answer is: {result}");
 }
-else if (operation == "*")
+else if (operation=="*")
 {
     result = number1 * number2;
-    Console.WriteLine($"Answer is:{result}");
+    Console.WriteLine($"Answer is: {result}");
 }
-else if (operation == "/")
+else if (operation=="/")
 {
     if (number2 != 0)
     {
-        result = number2 / number1;
-        Console.WriteLine($"Answer is:{result}");
+        result = number1 / number2;
+        Console.WriteLine($"Answer is: {result}");
 
     }
     else
@@ -41,4 +41,6 @@ else
 { 
     Console.WriteLine("Invalid operation. Please choose +, -, *, or /.");
 }
-    Console.ReadKey();
+    
+Console.ReadKey();
+
